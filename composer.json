@@ -1,0 +1,24 @@
+{
+    "name": "emanooel/teste",
+    "description": "apenas para fins de teste do trainamento sobre composer da arco.",
+    "license": "project",
+    "autoload": {
+        "psr-4": {
+            "Treinamento\\Teste\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "emanooel",
+            "email": "emanoelmartinsv@gmail.com"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "clear":[
+            "rm -f composer.lock",
+            "@composer clear-cache"
+        ],
+        "build-app":["@composer clear","@composer install"]
+    }
+}
